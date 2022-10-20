@@ -31,7 +31,8 @@
 }
 
 body{
-    background-color: var(--mainBgColor);            
+    background-color: var(--mainBgColor);
+    display: flex;
 }
 
 p, span, li{
@@ -49,30 +50,45 @@ li{
     line-height: 1.9em;
 }
 
-#container--main{
-    max-width: 700px;
-    margin: 0 auto;
+#container--main {
+    max-width: 600px;
+    margin: 0;
     padding: 1em;
 }
-
+#container--second{
+    max-width: 600px;
+    margin: 0;
+    padding: 1em;
+}
+#container--third{
+    max-width: 600px;
+    margin: 0;
+    padding: 1em;
+}
+}
 .section--page{
-    padding-top: 1em;
+    //padding-top: 1em;
     padding-bottom: 1em;
 }
 
 #wrapper--hero{
-    display: flex;
+    //display: flex;
     align-items: center;
-    gap: 4em;
+    //gap: 4em;
 }
-
+.profileTitle{
+    display: flex;
+}
 #bio, a{
     font-weight: 300;
 }
-
+.bio_wrapper{
+    padding: 0 1em;
+}
 #user-name{
     font-size: 48px;
     line-height: 1em;
+    margin: auto;
 }
 
 #profile-pic{
