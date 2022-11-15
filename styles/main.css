@@ -66,7 +66,7 @@ nav ul li a:active{
     width:100%;
 }
 .main img{
-    border-radius: 10%;
+    border-radius: 50%;
 }
 .bio{
     width:35vw;
@@ -97,19 +97,44 @@ nav ul li a:active{
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column
 }
 .aboutme{
     width:80vw;
     height: 60vh;
-    background-color: lightpink;
+    background-color: ;
     border-radius: 10px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: lightpink;
 }
-.conatct{
+.aboutme h2{
+    font-size: 3em;
+    border-bottom: 1px solid black;
+}
+.aboutme p{
+    font-size: 1.5em;
+    text-align: center;
+}
+.skills{
     height:100vh;
     width:100%;
-    background-color: yellow;
+    background-color: burlywood;
+}
+.services{
+    height:100vh;
+    width:100%;
+    background-color: aquamarine;
+}
+.contact{
+    height:100vh;
+    width:100%;
+    border-top: 1px solid black;
 }
 footer{
     background-color: black;
@@ -145,6 +170,7 @@ footer a:hover{
 
     section.main img{
         width: 90%;
+        margin-top: 4em;
     }
     nav ul{
         display:none;
@@ -194,8 +220,8 @@ footer a:hover{
     }
     /*burger button start*/
     .burger {
-        width: 4em;
-        height: 3em;
+        width: 15vw;
+        height: 6vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -210,11 +236,13 @@ footer a:hover{
         height: 25%;
         background-color: white;
         border-radius: 150px;
+        background-color: black;
     }
     .rotate1 {
         transform: translate(0, 150%) rotate(50deg);
         animation-name: rotate;
         animation-duration: 0.5s;
+        background-color: white;
     }
     @keyframes rotate {
         from {
@@ -231,6 +259,13 @@ footer a:hover{
         transform: translate(0, -150%) rotate(-50deg);
         animation-name: rotate;
         animation-duration: 0.5s;
+        background-color: white;
     }
     /*burger button end*/
+    section.about .aboutme h2{
+        font-size: 1.5em;
+    }
+    section.about .aboutme p{
+        font-size: 1em;
+    }
 }
