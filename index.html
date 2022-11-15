@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="icon" href="./assets/images/pic.png" type="image/x-icon">
-        <title>Farouk Chebaiki</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <nav>
-            <h2>FAROUK CHEBAIKI</h2>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#Blog">BLOG</a></li>
-            </ul>
-        </nav>
-        <!-- burger button start-->
-        <div class="burger">
-            <div class="form div1"></div>
-            <div class="form div2"></div>
-            <div class="form div3"></div>
-        </div>
-        <!-- burger button end-->
-        <div class="phonenav" >
-            <ul>
-                <li><a class="phonelink" href="#about">ABOUT</a></li>
-                <li><a class="phonelink" href="#contact">CONTACT</a></li>
-                <li><a class="phonelink" href="#kedda">BLOG</a></li>
-            </ul>
-        </div>
-    <section class="main" >
-        <img src="./assets/images/pic.png"/>
-        <div class="bio">
-            <h1>Hi ... :)</h1>
-            <h2>My Name is <span>FAROUK CHEBAIKI</span></h2>
-            <p>A FULL STACK MERN DEV</p>
-        </div>
-        </p>
-    </section>
-    <section ID="about" class="about"></section>
-        <script>
-            const div1 = document.querySelector(".div1");
-            const div2 = document.querySelector(".div2");
-            const div3 = document.querySelector(".div3");
-            const phonenav = document.querySelector(".phonenav");
-            const toggle = document.querySelector(".burger");
-            toggle.addEventListener("click", () => {
-                div1.classList.toggle("rotate1");
-                div2.classList.toggle("disapear");
-                div3.classList.toggle("rotate3");
-                phonenav.classList.toggle("phonenavon");
-            });
-            document.querySelector(".phonelink").addEventListener("click", () => {
-                div1.classList.toggle("rotate1");
-                div2.classList.toggle("disapear");
-                div3.classList.toggle("rotate3");
-                phonenav.classList.remove("phonenavon");
-            });
-        </script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/images/pic.png" type="image/x-icon">
+    <title>Farouk Chebaiki</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<nav>
+    <h2>FAROUK CHEBAIKI</h2>
+    <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#Blog">BLOG</a></li>
+    </ul>
+</nav>
+<!-- burger button start-->
+<div class="burger">
+    <div class="form div1"></div>
+    <div class="form div2"></div>
+    <div class="form div3"></div>
+</div>
+<!-- burger button end-->
+<div class="phonenav" >
+    <ul>
+        <li><a class="phonelink" href="#about">ABOUT</a></li>
+        <li><a class="phonelink" href="#contact">CONTACT</a></li>
+        <li><a class="phonelink" href="#kedda">BLOG</a></li>
+    </ul>
+</div>
+<section class="main" >
+    <img src="./assets/images/pic.png"/>
+    <div class="bio">
+        <h1>hello</h1>
+        <h2>i'm <span>FAROUK CHEBAIKI</span></h2>
+        <p>FULL STACK MERN DEV</p>
+    </div>
+    </p>
+</section>
+<section ID="about" class="about">
+    <div class="aboutme"></div>
+</section>
+<section  class="conatct"></section>
+<footer><p>Created By <a href="#">FAROUK CHEBAIKI</a> | © 2022 </p></footer>
+<script>
+    const div1 = document.querySelector(".div1");
+    const div2 = document.querySelector(".div2");
+    const div3 = document.querySelector(".div3");
+    const phonenav = document.querySelector(".phonenav");
+    const toggle = document.querySelector(".burger");
+    toggle.addEventListener("click", () => {
+        div1.classList.toggle("rotate1");
+        div2.classList.toggle("disapear");
+        div3.classList.toggle("rotate3");
+        phonenav.classList.toggle("phonenavon");
+    });
+    document.querySelector(".phonelink").addEventListener("click", () => {
+        div1.classList.toggle("rotate1");
+        div2.classList.toggle("disapear");
+        div3.classList.toggle("rotate3");
+        phonenav.classList.remove("phonenavon");
+    });
+</script>
+</body>
 </html>
