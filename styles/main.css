@@ -103,7 +103,6 @@ nav ul li a:active{
 .aboutme{
     width:80vw;
     height: 60vh;
-    background-color: ;
     border-radius: 10px;
     border: 1px solid black;
     display: flex;
@@ -204,6 +203,7 @@ footer a:hover{
     .phonenav ul li a{
         text-decoration: none;
         font-size: 1.5em;
+        color: white;
     }
     .phonenav ul li a:active{
         color: grey;
@@ -267,5 +267,30 @@ footer a:hover{
     }
     section.about .aboutme p{
         font-size: 1em;
+    }
+}
+@media screen and (max-width: 376px) {
+    section.about .aboutme{
+        width:90vw;
+        height: 80vh;
+    }
+    section.main img{
+        width: 90%;
+        margin-top: 1em;
+    }
+    section.main .bio{
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    section.main .bio h1{
+        font-size: 5em;
+        margin: 0;
+        padding: 0;
+    }
+    section.main .bio h2{
+        font-size: 2 em;
+        margin: 0;
+        padding: 0;
     }
 }
