@@ -14,8 +14,9 @@
     <h2>FAROUK CHEBAIKI</h2>
     <ul>
         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#services">SERVICES</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#Blog">BLOG</a></li>
     </ul>
 </nav>
 <!-- burger button start-->
@@ -28,8 +29,9 @@
 <div class="phonenav" >
     <ul>
         <li><a class="phonelink" href="#about">ABOUT</a></li>
+        <li><a class="phonelink" href="#skills">SKILLS</a></li>
+        <li><a class="phonelink" href="#services">SERVICES</a></li>
         <li><a class="phonelink" href="#contact">CONTACT</a></li>
-        <li><a class="phonelink" href="#kedda">BLOG</a></li>
     </ul>
 </div>
 <section class="main" >
@@ -89,8 +91,12 @@
         </div>
     </div>
 </section>
-<section  class="services"></section>
-<section  class="contact"></section>
+<section  id="services">
+    <h2 class="title">My Services</h2>
+</section>
+<section  id="contact">
+    <h2 class="title">Contact</h2>
+</section>
 
 <footer><p>Created By <a href="#">FAROUK CHEBAIKI</a> | © 2022. ALL Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
 </footer>
@@ -100,18 +106,15 @@
     const div3 = document.querySelector(".div3");
     const phonenav = document.querySelector(".phonenav");
     const toggle = document.querySelector(".burger");
-    toggle.addEventListener("click", () => {
+    function kedda() {
         div1.classList.toggle("rotate1");
         div2.classList.toggle("disapear");
         div3.classList.toggle("rotate3");
         phonenav.classList.toggle("phonenavon");
-    });
-    document.querySelector(".phonelink").addEventListener("click", () => {
-        div1.classList.toggle("rotate1");
-        div2.classList.toggle("disapear");
-        div3.classList.toggle("rotate3");
-        phonenav.classList.remove("phonenavon");
-    });
+    }
+    toggle.addEventListener("click", kedda);
+
+    document.querySelector(".phonelink").addEventListener("click",kedda);
 </script>
 </body>
 </html>

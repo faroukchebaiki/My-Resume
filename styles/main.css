@@ -2,7 +2,7 @@
 
 
 *{
-    font-family: 'Readex Pro';
+    font-family: 'Readex Pro', serif;
     line-height: 1.5em;
     box-sizing: border-box;
     color: black;
@@ -25,7 +25,6 @@ nav{
     top: 0;
 }
 nav h2{
-    color: var(--mainLinkColor);
     margin-right: auto;
     margin-left: 1em;
     font-size: 1.5em;
@@ -155,22 +154,33 @@ nav ul li a:active{
     justify-content: center;
 }
 .skill{
-
-    flex: 0 1 100px;
+    max-width: 5vw;
+    min-width: 40px;
     margin: 5px;
 }
 .skill img{
     width: 100%;
 }
-.services{
+#services{
     height:100vh;
-    width:100%;
-    background-color: burlywood;
-}
-.contact{
-    height:100vh;
-    width:100%;
+    width:100vw;
     border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+#contact{
+    height:100vh;
+    width:100vw;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: burlywood;
 }
 footer{
     background-color: black;
@@ -196,8 +206,7 @@ footer a:hover{
     section.main{
         flex-direction: column;
         margin: 0;
-        padding: 0;
-        padding-top: 10vh;
+        padding: 10vh 0 0;
     }
     section.main .bio{
         width: auto;
@@ -271,7 +280,6 @@ footer a:hover{
     .form {
         width: 100%;
         height: 25%;
-        background-color: white;
         border-radius: 150px;
         background-color: black;
     }
@@ -326,9 +334,13 @@ footer a:hover{
         padding: 0;
     }
     section.main .bio h2{
-        font-size: 2 em;
+        font-size: 2em;
         margin: 0;
         padding: 0;
     }
-
+    .skillsdiv{
+        width:90vw;
+        height: auto;
+        min-height: 80vh;
+    }
 }
