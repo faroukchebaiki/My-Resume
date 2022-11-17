@@ -113,11 +113,11 @@ nav ul li a:active{
     padding: 1em;
     background-color: lightpink;
 }
-.aboutme h2{
+.title{
     font-size: 3em;
     border-bottom: 1px solid black;
 }
-.aboutme p{
+.text{
     font-size: 1.5em;
     text-align: center;
 }
@@ -131,7 +131,8 @@ nav ul li a:active{
 }
 .skillsdiv{
     width:80vw;
-    height: 80vh;
+    height: auto;
+    min-height: 80vh;
     border-radius: 10px;
     border: 1px solid black;
     display: flex;
@@ -141,22 +142,25 @@ nav ul li a:active{
     padding: 1em;
     background-color: white;
 }
-#skills .skillsdiv h2{
+#skills.skillsdiv h2{
     border-bottom: 1px solid black;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 .skillcards{
     width: 100%;
     height: 50%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill{
+
+    flex: 0 1 100px;
+    margin: 5px;
 }
 .skill img{
-    width: 10em;
-    height: 10em;
+    width: 100%;
 }
 .services{
     height:100vh;
@@ -295,10 +299,10 @@ footer a:hover{
         background-color: white;
     }
     /*burger button end*/
-    section.about .aboutme h2{
+    .title{
         font-size: 1.5em;
     }
-    section.about .aboutme p{
+    .text{
         font-size: 1em;
     }
 }
@@ -326,4 +330,5 @@ footer a:hover{
         margin: 0;
         padding: 0;
     }
+
 }
