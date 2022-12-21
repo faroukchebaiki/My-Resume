@@ -163,7 +163,7 @@ nav ul li a:active{
 }
 #services{
     height:100vh;
-    width:100vw;
+    width:100%;
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ nav ul li a:active{
 }
 #contact{
     height:100vh;
-    width:100vw;
+    width:100%;
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
